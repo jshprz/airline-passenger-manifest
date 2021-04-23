@@ -5,18 +5,18 @@ Airline passenger manifest, simple Node.JS microservice for Airline Passengers.
 
 7 Steps To setup up Airline Passenger Manifest locally.
 
-1.) Install Node.JS on your machine - https://nodejs.org/en/download/
-2.) Clone this repository on your machine.
-3.) Import the MYSQL DB file located in the root directory of this repository to the installed MYSQL on your machine. (PS: Uncheck this option "Enable foreign key checks" upon importing this DB to prevent unexpected error.).
-4.) Create .env file in the root directory of this project then copy and paste the variables from env.example  that contains these following variables:
+- 1.) Install Node.JS on your machine - https://nodejs.org/en/download/
+- 2.) Clone this repository on your machine.
+- 3.) Import the MYSQL DB file located in the root directory of this repository to the installed MYSQL on your machine. (PS: Uncheck this option "Enable foreign key checks" upon importing this DB to prevent unexpected error.).
+- 4.) Create .env file in the root directory of this project then copy and paste the variables from env.example  that contains these following variables:
   - DB_HOST=<Host of your local DB client>
   - DB_PORT=<Port of your local DB client>
   - DB_USER=<Username of your local DB client>
   - DB_PASS=<Password of your local DB leave this empty of your DB client does not have password>
   - DB_NAME=<Database name of your local DB client>
-5.) npm install
-6.) npm run seed (To create the basic information of the Aircraft, Carrier, and configurations in the Database).
-7.) node app.js (To run the application - Note: The default hostname for this is "localhost" and the port is 3000).
+- 5.) npm install
+- 6.) npm run seed (To create the basic information of the Aircraft, Carrier, and configurations in the Database)
+- 7.) node app.js (To run the application - Note: The default hostname for this is "localhost" and the port is 3000)
 
 ## Running the test with mocha.
 npm test
