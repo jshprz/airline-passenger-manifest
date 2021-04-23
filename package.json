@@ -1,0 +1,31 @@
+{
+  "name": "airline-passenger-manifest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "seed": "concurrently \"node seeders/AircraftDetailsSeeder.js\" \"node seeders/AirlineCompaniesSeeder.js\" \"node seeders/AircraftsSeeder.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshprz/airline-passenger-manifest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshprz/airline-passenger-manifest/issues"
+  },
+  "homepage": "https://github.com/jshprz/airline-passenger-manifest#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "concurrently": "^6.0.2",
+    "mocha": "^8.3.2"
+  }
+}
