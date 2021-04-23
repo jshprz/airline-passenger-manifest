@@ -1,5 +1,4 @@
 # airline-passenger-manifest
-======
 
 Airline passenger manifest, simple Node.JS microservice for Airline Passengers.
 
