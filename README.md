@@ -34,7 +34,7 @@ npm test
     - http://localhost:3000/api/bookFlight POST (For checking in a passenger to a flight.)
         Valid Payload Keys:
         - flightId <number>
-        - seatType <number>
+        - seatType <number> (Note: first class seat = 1, business seat = 2, premium seat = 3, economy seat = 4)
         - firstname <string>
         - lastname <string>
         - age <number>
