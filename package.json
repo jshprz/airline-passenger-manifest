@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "seed": "concurrently \"node seeders/AircraftDetailsSeeder.js\" \"node seeders/AirlineCompaniesSeeder.js\" \"node seeders/AircraftsSeeder.js\""
+    "seed": "node seeders/AircraftDetailsSeeder.js && node seeders/AirlineCompaniesSeeder.js && node seeders/AircraftsSeeder.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
-    "concurrently": "^6.0.2",
     "mocha": "^8.3.2"
   }
 }
