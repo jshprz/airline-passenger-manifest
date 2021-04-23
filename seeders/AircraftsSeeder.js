@@ -1,4 +1,4 @@
-const db = require('../config/database');
+const db = require('../config/database')
 
 // Each array element will serves as row data in the mysql table.
 const datas = [
@@ -92,11 +92,11 @@ const datas = [
   ]
 ];
 
-(function createAircrafts() {
-  const sql = 'INSERT INTO `aircrafts_tbl` (id, aircraft_details_id, airline_company_id, first_class_seat_quantity, business_seat_quantity, premium_seat_quantity, economy_seat_quantity) VALUES ?';
+(function createAircrafts () {
+  const sql = 'INSERT INTO `aircrafts_tbl` (id, aircraft_details_id, airline_company_id, first_class_seat_quantity, business_seat_quantity, premium_seat_quantity, economy_seat_quantity) VALUES ?'
   db.query(sql, [datas], (err) => {
-    if(err) throw err;
-    console.log('Aircrafts Seed Data Successfully Created!');
-  });
-  db.end();
-})();
+    if (err) throw err
+    console.log('Aircrafts Seed Data Successfully Created!')
+  })
+  db.end()
+})()
