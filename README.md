@@ -14,7 +14,7 @@ Airline passenger manifest, simple Node.JS microservice for Airline Passengers.
   - DB_PASS=<Password of your local DB leave this empty of your DB client does not have password>
   - DB_NAME=<Database name of your local DB client>
 - 5.) npm install
-- 6.) npm run seed (To create the basic information of the Aircraft, Carrier, and configurations in the Database)
+- 6.) npm run seed (To create the basic information of the Aircraft, Carrier, and configurations in the Database) PS: Running this command twice will cause an error because of duplication. Make sure your database is fresh and empty upon running this command.
 - 7.) node app.js (To run the application - Note: The default hostname for this is "localhost" and the port is 3000)
 
 ## Running the test with mocha.
